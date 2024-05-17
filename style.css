@@ -1,0 +1,339 @@
+.page{
+    display: none;
+}
+.container{
+    width: 45%;
+    margin-left:auto ;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 10%;
+    height: fit-content;
+}
+.container .script{
+    background-color: #0000ff;
+    grid-column: span 6;
+    text-align: center;
+    font-size: 3vw;
+}
+.container .info{
+    background-color: rgba(165, 42, 42, 0.7);
+    font-size: 1.5vw;
+    grid-column: span 2;
+    line-height: 80px;
+    word-break: break-all;
+}
+.container .contact{
+    font-size: 2.5vw;
+    color: white;
+}
+.container .other{
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: slategray;
+}
+.container .study{
+    font-size: 1.5vw;
+    line-height: 180%;
+}
+.container .school{
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+.container .work{
+    font-size: 1.5vw;
+    line-height: 180%;
+}
+.container .job{
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+.container .skill{
+    grid-template-columns: 100%;
+    font-size: 1.5vw;
+    line-height: 180%;
+    margin-bottom: 10px;
+}
+.container .skill .si{
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 10px;
+}
+.container .skill .si div{
+    background-color: lightyellow;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.container .skill .si div span:last-child{
+    position: relative;
+    background-color: aqua;
+}
+.container .skill .si div span:last-child::before{
+    position: absolute;
+    content: attr(data-per);
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .one{
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+.container .language{
+    grid-template-columns: 100%;
+    font-size: 1.5vw;
+    line-height: 200%;
+}
+.container .language .nono{
+    display: grid;
+    grid-template-columns:100%;
+    row-gap: 10px;
+}
+.container .language .nono div{
+    background-color: lightyellow;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.container .language .nono div span:last-child{
+    position: relative;
+    background-color:yellow;
+}
+.container .language .nono div span:last-child::before{
+    position: absolute;
+    content: attr(data-pe);
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .two{
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+.con{
+width: 80%;
+margin: auto;
+font-size: 20px;
+}
+.con .form1{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 40% 20%;
+    justify-content: center;
+    gap: 30px 30px;
+}
+.per{
+    font-size: 30px;
+    font-weight: bold;
+}
+.con .form1 .all{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    justify-content: center;
+    gap: 10px 10px;
+    align-items: center;
+}
+.con .form1 .all div{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    justify-content: center;
+}
+.con .form1 .all div label{
+    grid-column: span 4;
+}
+.con .form1 .all div input{
+    grid-column: span 4;
+}
+.con .form2{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    gap: 10px 10px;
+    align-items: center;
+}
+.con .form2 div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.con .form2 div label{
+    grid-column: span 3;
+    display: grid;
+    justify-content: center;
+}
+.con .form2 div input{
+    grid-column: span 2;
+}
+.con .form2 div textarea{
+    grid-column: span 2;
+}
+.con button{
+    width: 20%;
+}
+.con .oh{
+    font-size: 30px;
+    font-weight: bold;
+}
+.con .form3{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    gap: 10px 10px;
+    align-items: center;
+}
+.con .form3 div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.con .form3 div label{
+    grid-column: span 3;
+    display: grid;
+    justify-content: center;
+}
+.con .form3 div input{
+    grid-column: span 2;
+}
+.con .form3 div textarea{
+    grid-column: span 2;
+}
+.con .loj{
+    font-size: 30px;
+    font-weight: bold;
+}
+.con .form4{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    gap: 30px 30px;
+}
+.pour{
+    font-size: 30px;
+    font-weight: bold;
+}
+.con .form4 .mop{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    justify-content: center;
+    gap: 10px 10px;
+    align-items: center;
+}
+.con .form4 .mop div{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    justify-content: center;
+    gap: 10px 10px;
+}
+.con .form4 .mop div label{
+    grid-column: span 4;
+}
+.con .form4 .mop div input{
+    grid-column: span 4;
+}
+.con .form4 .mop div select{
+    grid-column: span 4;
+}
+.con .form4 .mop div button{
+    grid-column: span 8;
+    font-size: 20px;
+}
+.con .form4 .mop div .firs{
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px ;
+}
+.con .form4 .mop div .firs div{
+background-color: rgba(250, 235, 215, 0.915);
+
+}
+.con .form5{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    gap: 30px 30px;
+}
+.lan{
+    font-size: 30px;
+    font-weight: bold;
+}
+.con .form5 .popo{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    justify-content: center;
+    gap: 10px 10px;
+    align-items: center;
+}
+.con .form5 .popo div{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    justify-content: center;
+    gap: 10px 10px;
+}
+.con .form5 .popo div label{
+    grid-column: span 4;
+}
+.con .form5 .popo div input{
+    grid-column: span 4;
+}
+.con .form5 .popo div select{
+    grid-column: span 4;
+}
+.con .form5 .popo div button{
+    grid-column: span 8;
+    font-size: 20px;
+}
+.con .form5 .popo div .ino{
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px ;
+}
+.con .form5 .popo div .ino div{
+background-color: rgba(250, 235, 215, 0.915);
+
+}
+.con .form2{
+    display: none;
+}
+.con .form3{
+    display: none;
+    }
+.con .form4{
+    display: none;
+}
+.con .form4 .mop .slc{
+    display: none;
+}
+.con .form4 .mop .sk{
+    display: none;
+}
+.con .form4 .mop .sav .save4{
+    display: none;
+}
+.con .form4 .mop .sav .finish{
+    display: none;
+}
+.con .form5{
+    display: none;
+}
+.con .form5 .popo .slco{
+    display: none;
+}
+.con .form5 .popo .soko{
+    display: none;
+}
+.con .form5 .popo .savo .save5{
+    display: none;
+}
+.con .form5 .popo .savo .finisho{
+    display: none;
+}
+.con .form2{
+    display: none;
+}
+.con .form3{
+    display: none;
+}
